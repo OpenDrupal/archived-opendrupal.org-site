@@ -102,23 +102,27 @@
         </li>
       
         <li class="tab-title">
-          <a href="#cke">13. Improve the editing experience</a>
+          <a href="#import">13. Rebuild &amp; Import</a>
         </li>
       
         <li class="tab-title">
-          <a href="#subtheme">14. Creating your own theme</a>
+          <a href="#cke">14. Improve the editing experience</a>
         </li>
       
         <li class="tab-title">
-          <a href="#extramodules">15. Extra modules</a>
+          <a href="#subtheme">15. Creating your own theme</a>
         </li>
       
         <li class="tab-title">
-          <a href="#community">16. The Drupal Community</a>
+          <a href="#extramodules">16. Extra modules</a>
         </li>
       
         <li class="tab-title">
-          <a href="#resources">17. Resources</a>
+          <a href="#community">17. The Drupal Community</a>
+        </li>
+      
+        <li class="tab-title">
+          <a href="#resources">18. Resources</a>
         </li>
       
     </ul>
@@ -136,6 +140,12 @@
         <li>How to install and configure Drupal and how to manage content.</li>
         <li>The fundamental concepts of Drupal including: Nodes, Taxonomy, Menus, Blocks and Themes.</li>
         <li>Some of the most widely used Drupal modules, including Views &amp; Webform.</li>
+        <li>An introduction to web servers and the underlying technologies needed to host a Drupal website.</li>
+        <li>Set up a local environment, and install Drupal locally ready for development work</li>
+        <li>Install some tools to help with local development.</li>
+        <li>Get stuck into the fundamental languages that underpin the web: HTML &amp; CSS.</li>
+        <li>Set up a rich text editor and learn about text formats.</li>
+        <li>Use Drupal&rsquo;s powerful user management features and contributed modules add interactive functionality.</li>
         </ul>
         <h2>What will I have to show after I finish? </h2>
         <ul>
@@ -507,11 +517,7 @@
         </ol>
         <h3><strong>Resources</strong></h3>
         <ul>
-        <ul>
         <li><strong>Watch:</strong> <a href="https://drupal.org/node/1351064">Drupal.org, Webform video tutorials</a></li>
-        </ul>
-        </ul>
-        </li>
         <li><strong>Watch: </strong><a href="http://www.youtube.com/watch?v=PRci_xRDTE0">Webform tutorial</a></li>
         <li><strong>Read: </strong><a href="https://drupal.org/documentation/modules/webform">Webform documentation</a></li>
         <li>
@@ -519,26 +525,178 @@
 
       <div class="lesson content" id="local">
         <h2>12. Set up locally</h2>
+        <h3>A. Set up a local server</h3>
+        <p>While web servers are usually remote machines, we can set up all of the technologies on our local computers to act as a local web server. This means we&rsquo;ll be able to work on our website on our own computers, without the need to setup and configure a remote server. We&rsquo;ll have easy access to all files, and if multiple developers are working on the same project we won&rsquo;t &nbsp;accidentally edit the same file. And we&rsquo;ll even be able to work without an internet connection.</p>
+        <p>We suggest <a href="http://www.acquia.com/products-services/dev-desktop%20">Acquia Dev Desktop</a> (<a href="http://buildamodule.com/collection/introduction">installation</a>)</p>
+        <h3>Some Alternatives</h3>
+        <h4><strong>For Windows</strong></h4>
+        <p>We recommend using <a href="http://www.uniformserver.com/">The Uniform Server</a>:</p>
+        <ul>
+        <li><strong>Watch:</strong> <a href="http://www.youtube.com/watch?v=3SPyQ3KJLJg%20">Uniform &amp; Drupal</a></li>
+        <li><strong>Download:</strong> <a href="http://www.uniformserver.com">Uniform Server</a> (make sure you download <a href="http://sourceforge.net/projects/miniserver/files/Uniform%20Server/8.1.2-Coral/">version 8.1.2</a> for PHP 5.3)</li>
+        <li><a href="http://bitnami.com/stack/drupal%20">BitNami AMP Stack</a> (<a href="http://www.coolestguidesontheplanet.com/downtown/installing-drupal-7-os-x-mountain-lion-108-quickly-and-easily">Installation tutorial</a>)</li>
+        <li><a href="http://www.apachefriends.org/index.html">XAMPP</a> (<a href="http://www.youtube.com/watch?v=YsCWlpHg8DE">XAMPP &amp; Drupal installation</a>)</li>
+        </ul>
+        <h4><strong>For Mac</strong></h4>
+        <ul>
+        <li><a href="http://www.mamp.info/en/index.html">MAMP</a></li>
+        </ul>
+        <h3>B. Install Drupal</h3>
+        <ul>
+        <li><a href="https://drupal.org/project/drupal">Download Drupal core</a> (version 7)</li>
+        <li>Install Drupal locally, so you can access it under a domain such as <a href="http://localhost/drupal7">http://localhost/drupal7</a> &nbsp;or, even better <a href="http://drupal7.local">http://drupal7.local</a></li>
+        </ul>
+      </div>
+
+      <div class="lesson content" id="import">
+        <h2>13. Rebuild &amp; Import</h2>
+        <h3>Intro</h3>
+        <p>Now you&rsquo;ve got a local development environment with Drupal up and running, we can install some common modules to begin some more in-depth development.</p>
+        <h3>Install Modules</h3>
+        <p>Now we have a local setup we can install modules by copying them directly in to our local codebase.</p>
+        <ul>
+        <li><strong>Read:</strong> <a href="https://drupal.org/documentation/install/modules-themes/modules-7">Installing contributed modules</a></li>
+        <li>Download and install <a href="https://drupal.org/project/views">Views</a>, <a href="https://drupal.org/project/ctools">CTools</a> &amp; <a href="https://drupal.org/project/webform">Webform</a> modules</li>
+        <li>Install a <a href="https://drupal.org/project/project_theme">theme</a> if you like</li>
+        </ul>
+        <h3>Export &amp; Import</h3>
+        <p>Now we&rsquo;re going to export data from our cloud site, and Import to our local site. There are various ways we can go about this:</p>
+        <h4><strong>Manual Import &amp; Export</strong></h4>
+        <p>We could simply re-create content on our local site, in the same way our cloud site is setup. Simply copy &amp; pasting content is a quick and simple method that should always work, although it can be time consuming. Be careful to check you don&rsquo;t miss anything!</p>
+        <h4><strong>Export &amp; Import Nodes</strong></h4>
+        <p>Generating PHP code to Export &amp; Import is less error prone and can be quicker.</p>
+        <ul>
+        <li>Install the <a href="https://drupal.org/project/node_export">Node Export</a> module on your cloud site</li>
+        <li>Go through each node individually and export, nodes will be exported in PHP</li>
+        <li>On your local site, import each node by copying &amp; pasting the PHP code.</li>
+        <li>We could use the Views Bulk Operations module to export a number of nodes at a time, however this requires more advanced configuration</li>
+        </ul>
+        <h4><strong>Import &amp; Export Views</strong></h4>
+        <p>Views comes with Export &amp; Import functionality.</p>
+        <ul>
+        <li>Navigate to a view you&rsquo;d like to export from your dev site and select &lsquo;export&rsquo;</li>
+        <li>Copy the view export code</li>
+        <li>On your local site, go to <strong>Structure-&gt;Views</strong> and click Import</li>
+        <li>Paste the code in and import the view</li>
+        </ul>
+        <p><strong>Export &amp; Import your database</strong></p>
+        <p>We can take a snapshot of our cloud site&rsquo;s database, and overwrite our local database. This method can be quick, but is more prone to errors and breaking your site if anything goes wrong.</p>
+        <ul>
+        <li>First make sure your local codebase is synchronised with your cloud site&rsquo;s. You&rsquo;ll need to check the same version of Drupal and all of the same modules &amp; themes are available locally.</li>
+        <li>We could use SFTP to copy all of the cloud site&rsquo;s files to our local installation. Be careful to ensure that your local settings.php file isn&rsquo;t overwritten as it contains the details to connect to your local database.</li>
+        <li>Now we can use a module called backup &amp; migrate to export our cloud site&rsquo;s database, and import it to our local site. We could also import the database using PhpMyAdmin, first deleting all tables in our local database and then importing the backup generated from Backup &amp; Migrate.</li>
+        </ul>
       </div>
 
       <div class="lesson content" id="cke">
         <h2>13. Improve the editing experience</h2>
+        <h2>Improve The Content Editing Experience</h2>
+        <h3>Intro</h3>
+        <p>To make life easier for our content editors, we can install an RTE (Rich Text Editor), sometimes known as a WYSIWYG (What You See Is What You Get) Editor. </p>
+        <p>Combined with Drupal's input (text) formats an RTE will allow us a good deal of control over what users can input into our site and at the same time give them (and us) an easier way of adding text content.</p>
+        <h3>Set up CKEditor</h3>
+        <ul>
+        <li>Install the <a href="https://drupal.org/project/ckeditor">CKEditor module</a></li>
+        <li>The CKEditor module requires the <a href="http://ckeditor.com/">CKEditor Javascript library</a>, you&rsquo;ll need to download this and copy it into the correct place</li>
+        <li>We&rsquo;ll also need to configure the CKEditor module, enabling buttons and making sure it&rsquo;s being applied to the correct text formats.</li>
+        </ul>
+        <h3>Set up a new text format</h3>
+        <p>Text formats in Drupal allow us to control what users are allowed to add into text fields, and how what they add is altered. They can let us do things like change URLs into links automatically, or strip out HTML code if we don&rsquo;t want users to be able to add this in. It&rsquo;s usually good practice to strip out unwanted code so we can control the way our site looks more closely.</p>
+        <ul>
+        <li><a href="https://drupal.org/node/778976">Create a new text format</a> called &ldquo;Rich Text&rdquo;</li>
+        <li>Set this as the default text format, and enable CKEditor for this format</li>
+        </ul>
+        <p><strong><strong><br /><br /></strong></strong></p>
+        <h3><strong>Resources</strong></h3>
+        <ul>
+        <li><strong>Watch:</strong> <a href="http://jesox.com/screencasts/how-install-and-configure-ckeditor-module">How to install &amp; configure the CKEditor module</a></li>
+        <li><strong>Read:</strong> <a href="https://drupal.org/node/684372">CKEditor module documentation</a></li>
+        <li><strong>Read:</strong> <a href="http://pingv.com/blog/text-formats-101-how-drupal-filters-work">How text formats work</a></li>
+        <li><strong>Read:</strong> <a href="http://cms.about.com/od/drupal/g/What-Is-A-Drupal-Text-Format.htm">What is a Drupal text format?</a></li>
+        </ul>
       </div>
 
       <div class="lesson content" id="subtheme">
         <h2>14. Create your own Sub-theme</h2>
+        <h3>Intro</h3>
+        <p>It is possible to 'hack' themes - changeing or adding code to the template files to make them look and behave how you would like them to. However, developing in this way creates a fork of the original theme which can no longer accept updates from the team that created it. Drupal provides us with a getaround enabling us to create our own themes based on other themes without the risks and responsibilities that come with hacking or forking existing projects.</p>
+        <p>We create a sub-theme, one that inherits all the files and properties of the original theme but can safely contain our individual overrides for style and functionality.</p>
+        <ul>
+        <li><a href="">https://www.drupal.org/node/1978010</a></li>
+        <li><strong>Do: </strong> create a subtheme for your site based on bootstrap.</li>
+      </ul>
+      </div>
+
+
+      <div class="lesson content" id="users">
+        <h2>15. Working with users</h2>
+        <h3>Intro</h3>
+        <p>Drupal comes with a powerful set of tools to manage users out of the box, using contributed in addition to this can let us create a powerful set of interactive features in our website.</p>
+        <h3>Content</h3>
+        <ul>
+        <li><strong>Read: </strong><a href="http://www.inmotionhosting.com/support/edu/drupal-7/managing-users">Managing users</a></li>
+        <li><strong>Watch: </strong><a href="http://www.youtube.com/watch?v=XekhYdsSTzY%20">Account settings &amp; Adding fields</a></li>
+        <li><strong>Do: </strong>Create a new user role of 'Guest Blogger', alow this user role access to be able to create and edit articles but not pages. Invite one of your friends or colleagues to create a guest post on your site. They or you will need to create an account first and you can then give them this new role.</li>
+        </ul>
       </div>
 
       <div class="lesson content" id="extramodules">
-        <h2>15. Extra modules</h2>
+        <h2>16. Extra modules</h2>
+        <p>There are thousands of contributed modules for Drupal
+        <ul>
+        <li><a href="https://drupal.org/project/disqus">Disqus module</a> - Is great for commenting</li>
+        <li><a href="https://drupal.org/project/privatemsg">Private messaging</a> module lets users send private messages to each other</li>
+        <li><a href="https://drupal.org/project/heartbeat">Heartbeat</a> gives you powerful Facebook style functionality with your own wall</li>
+        <li><a href="https://drupal.org/project/fivestar">Fivestar</a> module gives you a ratings system</li>
+        <li>The <a href="https://drupal.org/project/masquerade">Masquerade</a> module is great for testing out your site</li>
+        <li>Take a look at <a href="https://drupal.org/project/commons">Drupal Commons</a> for some ideas</li>
+        </ul>
       </div>
 
       <div class="lesson content" id="community">
-        <h2>16. The Drupal Community</h2>
+        <h2>17. The Drupal Community</h2>
+        <h3>Intro</h3>
+        <p>At the heart of Drupal is the community. </p>
+        <p><em>&ldquo;1,032,904</em> people in <em>230</em> countries speaking <em>181</em> languages power Drupal.&rdquo;</p>
+        <p>It&rsquo;s one of the most powerful parts of Drupal, and there are lots of friendly Drupal developers out there who help each other out, every day.</p>
+        <h3>Join in</h3>
+        <ul>
+        <li>Register on <a href="https://drupal.org">Drupal.org</a>, take a look around at the issue queues and documentation</li>
+        <li>Login to a Drupal IRC chatroom: <a href="https://drupal.org/irc">Chat with the Drupal community on IRC</a></li>
+        <li>Register on <a href="http://groups.drupal.org">groups.drupal.org</a> and join the <a href="http://groups.drupal.org/opendrupal">OpenDrupal group</a></li>
+        <li>Find your nearest Drupal event and attend on <a href="http://www.drupical.com/">Drupical</a></li>
+        <li>Sign up to <a href="http://drupalladder.org/">Drupal Ladder</a> and contribute to core</li>
+        </ul>
+        <h3><strong>Resources</strong></h3>
+        <ul>
+        <li><strong><a href="https://drupal.org/forum%20">Drupal.org forums</a></strong></li>
+        </ul>
+        <ul>
+        <li><strong>Watch: </strong><a href="http://nodeone.se/sv/node/809">Drupal is a community</a></li>
+        <li><a href="https://drupal.org/community">Drupal Community</a></li>
+        </ul>
       </div>
 
       <div class="lesson content" id="resources">
-        <h2>17. Resources</h2>
+        <h2>18. Resources</h2>
+        <h3>Developer tools</h3>
+        <ul>
+        <li><strong>Code Editor:</strong> <a href="http://www.sublimetext.com/2%20">SublimeText 2</a> (alternate options: <a href="http://notepad-plus-plus.org/">Notepad++</a>, <a href="https://netbeans.org/">NetBeans</a>, <a href="https://www.eclipse.org/">Eclipse</a>, <a href="http://www.jetbrains.com/phpstorm/">PhpStorm</a>)</li>
+        <li><strong>Browse:</strong> <a href="http://www.mozilla.org/en-US/firefox/new/">Firefox</a> (alternate options: <a href="https://www.google.com/intl/en/chrome/browser/">Chrome</a>, <a href="http://www.opera.com/">Opera</a>)</li>
+        <li><strong>Browser Tools:</strong> <a href="https://getfirebug.com/">Firebug</a> (also see <a href="https://addons.mozilla.org/en-US/firefox/addon/web-developer/">Web Developer</a> add-on)</li>
+        </ul>
+        <h3>Learning HTML &amp; CSS</h3>
+        <p>There are lots of options for learning HTML &amp; CSS, here are some recommended routes:</p>
+        <ul>
+        <li><a href="https://webmaker.org/en-US/starter-makes">Mozilla&rsquo;s Webmaker</a> - A great place to practice. Build and remix practical projects.</li>
+        <li><a href="http://www.codecademy.com/">Code Academy</a> - Completely free online interactive tool, a great place to learn the </li>
+        <li><a href="https://www.codeschool.com/">CodeSchool</a> &nbsp;- An alternative to Code Academy, offers some free and some paid tutorials.</li>
+        </ul>
+        <ul>
+        <li><a href="http://en.wikipedia.org/wiki/HTML">HTML</a> - Wikipedia</li>
+        <li><a href="http://inventors.about.com/od/computersoftware/a/html.htm">History of HTML</a> - About.com</li>
+        <li><a href="http://www.atendesigngroup.com/blog/brief-history-of-html">A brief history of HTML</a> - Aten Design Group</li>
+        </ul>
       </div>
  
     
