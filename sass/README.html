@@ -33,63 +33,63 @@
               <li class="primary-menu__item"><a href="/pages/the_curriculum.html">The Curriculum</a></li>
               <li class="primary-menu__item"><a href="/lessons/lessons.html">Lessons</a></li>
             </ul>
-            <ul class="secondary-menu">
-              <li class="secondary-menu__item"><a href="pages/drupal_training_programmes.html">Training Programmes</a></li>
-              <li class="secondary-menu__item"><a href="">The Open Drupal VM</a></li>
-              <li class="secondary-menu__item"><a href="">FAQs</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
+            <!-- <ul class="secondary-menu">
+               <li class="secondary-menu__item"><a href="pages/drupal_training_programmes.html">Training Programmes</a></li>
+               <li class="secondary-menu__item"><a href="">The Open Drupal VM</a></li>
+               <li class="secondary-menu__item"><a href="">FAQs</a></li>
+             </ul>-->
+           </nav>
+         </div>
+       </div>
+     </header>
 
-<h2>Rocket CSS</h2><p><a href="https://github.com/hedleysmith/rocketcss">Rocket CSS</a> is a decoupled library of CSS components written using Sass.</p>
-<p>Components are provided with some styling and configuration options but are designed to be used as a starting point in a custom design system.</p>
-<p>Rocket also encourages the use of components from other libraries.</p>
-<h3>Customising Components</h3><p>It&#39;s up to you how you customise the components. Here are two suggested approaches</p>
-<p>1) <strong>Use Rocket components as a starting point.</strong> Go in and edit the component code directly, useful for larger projects where you&#39;re likely to deviate significantly from the original component and you want to have more control. A disadvantage of this is that if there are updates released for a component it&#39;ll be more difficult to take advantages of these.</p>
-<p>2) <strong>Configure and extend components.</strong> By keeping the original Rocket component you&#39;ll be able to take advantage of any updates that are released. Each component has a number of default configuration options documented at the start of the component file, these can be overridden elsewhere in the codebase. You could add your own customisations to a _theme.scss file which should be included before the component.</p>
-<h2>Importing Components</h2><p>With numerous front end component libraries out there it makes sense to harness them. Rocket provides a way to use and customise individual components from other libraries without having to follow their design patterns entirely.</p>
-<h3>Foundation</h3><p><strong>Installation</strong></p>
-<ol>
-<li>Copy _functions.scss and _global.scss across.</li>
-<li>Copy over the .scss file for the component you&#39;re installing.</li>
-<li>Now attempt to compile the codebase, if there are any missing dependencies, figure out how to resolve them (this part can get a bit tricky).</li>
-</ol>
-<p><strong>Javascript Components</strong></p>
-<ol>
-<li>Foundation <a href="http://foundation.zurb.com/docs/javascript.html">requires Modernizr &amp; jQuery &gt; 2.1.0</a> so include these as well as foundation.js - also, initialise foundation.</li>
-</ol>
-<pre><code>&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;//code.jquery.com/jquery-2.1.4.min.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;/js/foundation.js&quot;&gt;&lt;/script&gt;
-&lt;script&gt;
-  $(document).foundation();
-&lt;/script&gt;
-</code></pre><ol>
-<li>Copy the relevant .js file, e.g /js/foundation.tab.js</li>
-</ol>
-<h3>Bootstrap</h3><p>@todo</p>
-<h3>Material Design Light</h3><p>@todo</p>
-<h3>Other Libraries</h3><ul>
-<li><a href="http://expandjs.com/">ExpandJS</a></li>
-</ul>
-  <footer class="footer l-container">
-    <div class="footer__inner">
-      <p><a href="https://github.com/opendrupal">Find us on GitHub</a></p>
-    </div>
-  </div>
+ <h2>Rocket CSS</h2><p><a href="https://github.com/hedleysmith/rocketcss">Rocket CSS</a> is a decoupled library of CSS components written using Sass.</p>
+ <p>Components are provided with some styling and configuration options but are designed to be used as a starting point in a custom design system.</p>
+ <p>Rocket also encourages the use of components from other libraries.</p>
+ <h3>Customising Components</h3><p>It&#39;s up to you how you customise the components. Here are two suggested approaches</p>
+ <p>1) <strong>Use Rocket components as a starting point.</strong> Go in and edit the component code directly, useful for larger projects where you&#39;re likely to deviate significantly from the original component and you want to have more control. A disadvantage of this is that if there are updates released for a component it&#39;ll be more difficult to take advantages of these.</p>
+ <p>2) <strong>Configure and extend components.</strong> By keeping the original Rocket component you&#39;ll be able to take advantage of any updates that are released. Each component has a number of default configuration options documented at the start of the component file, these can be overridden elsewhere in the codebase. You could add your own customisations to a _theme.scss file which should be included before the component.</p>
+ <h2>Importing Components</h2><p>With numerous front end component libraries out there it makes sense to harness them. Rocket provides a way to use and customise individual components from other libraries without having to follow their design patterns entirely.</p>
+ <h3>Foundation</h3><p><strong>Installation</strong></p>
+ <ol>
+ <li>Copy _functions.scss and _global.scss across.</li>
+ <li>Copy over the .scss file for the component you&#39;re installing.</li>
+ <li>Now attempt to compile the codebase, if there are any missing dependencies, figure out how to resolve them (this part can get a bit tricky).</li>
+ </ol>
+ <p><strong>Javascript Components</strong></p>
+ <ol>
+ <li>Foundation <a href="http://foundation.zurb.com/docs/javascript.html">requires Modernizr &amp; jQuery &gt; 2.1.0</a> so include these as well as foundation.js - also, initialise foundation.</li>
+ </ol>
+ <pre><code>&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js&quot;&gt;&lt;/script&gt;
+ &lt;script src=&quot;//code.jquery.com/jquery-2.1.4.min.js&quot;&gt;&lt;/script&gt;
+ &lt;script src=&quot;/js/foundation.js&quot;&gt;&lt;/script&gt;
+ &lt;script&gt;
+   $(document).foundation();
+ &lt;/script&gt;
+ </code></pre><ol>
+ <li>Copy the relevant .js file, e.g /js/foundation.tab.js</li>
+ </ol>
+ <h3>Bootstrap</h3><p>@todo</p>
+ <h3>Material Design Light</h3><p>@todo</p>
+ <h3>Other Libraries</h3><ul>
+ <li><a href="http://expandjs.com/">ExpandJS</a></li>
+ </ul>
+   <footer class="footer l-container">
+     <div class="footer__inner">
+       <p><a href="https://github.com/opendrupal">Find us on GitHub</a></p>
+     </div>
+   </div>
 
-  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f5b704772f91b81"></script>
+   <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f5b704772f91b81"></script>
 
-    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+     <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
 
-    <script src="/js/foundation.js"></script>
-    <script src="/js/foundation.tab.js"></script>
+     <script src="/js/foundation.js"></script>
+     <script src="/js/foundation.tab.js"></script>
 
-    <script>
-      $(document).foundation();
-    </script>
-  </body>
-</html>
+     <script>
+       $(document).foundation();
+     </script>
+   </body>
+ </html>
 
