@@ -1,4 +1,12 @@
-# devAid **Jekyll** Theme
+# Site for Open Drupal Project
+##[OpenDrupal.org](https://opendrupal.org)
+
+**Free and Open Source training materials for teaching and learning Drupal**
+
+With cooperation from developers, educators and the community we are building an open source curriculum and set of training material to make it easier to run effective Drupal training programmes and help people get started in the web industry.
+
+
+## USing devAid **Jekyll** Theme
 
 <p align="center">
   <img src="images/devaid_cover.png">
