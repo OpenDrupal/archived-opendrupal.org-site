@@ -43,9 +43,9 @@ markdown:     kramdown
 permalink:    pretty
 
 widgets:
-  - title: About
-    url: /about
   - title: Materials
     url: /materials
   - title: Contribute
     url: /contribute
+  - title: About
+    url: /about
