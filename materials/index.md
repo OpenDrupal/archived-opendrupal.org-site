@@ -2,7 +2,6 @@
 layout: page
 title: Materials
 permalink: /materials/index.html
-dir: /materials/
 ---
 
 Open Drupal is a collection of high quality Drupal course materials.
