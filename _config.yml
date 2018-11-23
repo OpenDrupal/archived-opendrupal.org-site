@@ -3,7 +3,7 @@
 title:               Open Drupal
 # email:               example@gmail.com
 tagline:             An open curriculum of Drupal course materials
-url:                 "https://opendrupal.org" # insert your site's URL
+url:                 "https://opendrupal.org/" # insert your site's URL
 baseurl:             "/"
 
 # About/contact
