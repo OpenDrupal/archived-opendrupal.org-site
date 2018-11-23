@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Materials
-permalink: /materials/
+permalink: /materials/index.html
 dir: /materials/
 ---
 
