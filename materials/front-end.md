@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Drupal Front-end
-permalink: /materials/drupal-frontend/
+permalink: /materials/drupal-frontend
 ---
 
 # Page: Drupal Front-end

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Contribute
-permalink: /contribute/
+permalink: /contribute
 ---
 ## Contribute to Open Drupal
 The Drupal project is constantly evolving and course materials should be kept up to date. We welcome your contribution to Open Drupal.

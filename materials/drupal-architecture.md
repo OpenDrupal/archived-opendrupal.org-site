@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Drupal Architecture
-permalink: /materials/drupal-architecture/
+permalink: /materials/drupal-architecture
 ---
 
 Combine Drupal core and contributed modules to build a Drupal website. Learn to apply frequently used patterns and strategies to create the high level architecture of a Drupal website.

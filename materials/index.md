@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Materials
-permalink: /materials/index.html
+permalink: /materials
 ---
 
 Open Drupal is a collection of high quality Drupal course materials.
