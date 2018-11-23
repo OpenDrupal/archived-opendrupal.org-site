@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Drupal Fundamentals
-permalink: /materials/drupal-fundamentals
+permalink: /materials/drupal-fundamentals/
 ---
 
 The Open Drupal Drupal Fundamentals course is an introduction to Drupal as a Content Management System. During this course you will build a festival website. While building, you will get familiar with Drupal's fundamental concepts and experience the power of Drupal 8.

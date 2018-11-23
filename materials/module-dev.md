@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Drupal Module Development
-permalink: /materials/drupal-module-development
+permalink: /materials/drupal-module-development/
 ---
 
 The Open Drupal Drupal module development course provides you with fundamental knowledge of the Drupal 8 API. During this course you will build modules using Drupal 8 principles and Drupal API functions. While doing so, you also learn security aspects of Drupal module development.
